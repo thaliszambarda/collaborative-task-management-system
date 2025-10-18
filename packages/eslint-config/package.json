@@ -1,0 +1,27 @@
+{
+	"name": "@repo/eslint-config",
+	"version": "0.0.0",
+	"type": "module",
+	"private": true,
+	"exports": {
+		"./base": "./base.js",
+		"./react": "./react.js",
+		"./nest": "./nest.js"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.38.0",
+		"@repo/prettier-config": "*",
+		"@types/eslint__js": "^8.42.3",
+		"eslint": "^9.38.0",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-jsx-a11y": "^6.10.2",
+		"eslint-plugin-prettier": "^5.5.4",
+		"eslint-plugin-react": "^7.37.5",
+		"eslint-plugin-react-hooks": "^7.0.0",
+		"eslint-plugin-react-refresh": "^0.4.24",
+		"eslint-plugin-tailwindcss": "^3.18.2",
+		"eslint-plugin-vitest": "^0.5.4",
+		"globals": "^16.4.0",
+		"typescript-eslint": "^8.46.1"
+	}
+}

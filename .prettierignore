@@ -1,0 +1,30 @@
+dist
+build
+coverage
+node_modules
+.turbo
+.next
+.cache
+
+# Arquivos gerados
+*.min.js
+*.min.css
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Build outputs
+out/
+.output/
+.vercel/
+.netlify/
+
+# Logs
+*.log
+
+# Environment files (opcional)
+.env
+.env.*
+
+# Outros
+CHANGELOG.md

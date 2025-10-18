@@ -1,0 +1,29 @@
+{
+  "name": "collaborative-task-management-system",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^2.5.8",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "npm@10.9.3",
+  "dependencies": {
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0"
+  }
+}

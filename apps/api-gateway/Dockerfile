@@ -2,9 +2,11 @@ FROM node:22-alpine AS base
 
 WORKDIR /app
 
+# Copy only manifest files for caching
 COPY package*.json ./
-COPY apps/api-gateway/package*.json ./apps/api-gateway/
-COPY packages ./packages
+COPY apps/api-gateway/package.json ./apps/api-gateway/package.json
+COPY packages/tsconfig/package.json ./packages/tsconfig/package.json
+COPY packages/utils/package.json ./packages/utils/package.json
 
 RUN npm install
 
